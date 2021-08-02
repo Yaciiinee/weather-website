@@ -15,7 +15,8 @@ weatherForm.addEventListener("submit", (e) => {
                 p2.textContent = "";
             } else {
                 p1.textContent = data.location;
-                p2.textContent = data.forecast + "," + " حاليا درجة الحرارة: " + data.temp
+                console.log(data.humidity)
+                p2.textContent = data.forecast + "," + " حاليا درجة الحرارة: " + data.temp + ", " + " نسبة الرطوبة: " + data.humidity;
             }
         })
     })
